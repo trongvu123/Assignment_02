@@ -1,0 +1,11 @@
+D:\dotnet2\DataModels1\bin\Debug\net8.0\DataModels1.deps.json
+D:\dotnet2\DataModels1\bin\Debug\net8.0\DataModels1.dll
+D:\dotnet2\DataModels1\bin\Debug\net8.0\DataModels1.pdb
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.AssemblyInfoInputs.cache
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.AssemblyInfo.cs
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.csproj.CoreCompileInputs.cache
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.dll
+D:\dotnet2\DataModels1\obj\Debug\net8.0\refint\DataModels1.dll
+D:\dotnet2\DataModels1\obj\Debug\net8.0\DataModels1.pdb
+D:\dotnet2\DataModels1\obj\Debug\net8.0\ref\DataModels1.dll
