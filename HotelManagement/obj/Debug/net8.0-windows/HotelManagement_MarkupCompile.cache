@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\dotnet2\HotelManagement\App.xaml
-41358571924
+7-94426004
 
-8740733455
-208297457534
-Login_Window.xaml;MainWindow.xaml;RoomManagerWindow.xaml;UserProfile.xaml;
+11773605910
+247-242192066
+BookingReservationWindow.xaml;Login_Window.xaml;MainWindow.xaml;ReportWindow.xaml;RoomManagerWindow.xaml;UserBookingWindow.xaml;UserProfile.xaml;
 
 False
 

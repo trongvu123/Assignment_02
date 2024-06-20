@@ -1,4 +1,5 @@
-﻿using DataModels1;
+﻿using HotelManagement;
+using HotelManagement.Models;
 using RepositoryPattern1;
 using System.Collections.ObjectModel;
 using System.Windows;
@@ -11,9 +12,9 @@ namespace MiniHotelManagement
         private readonly CustomerRepository _customerRepository;
         private ObservableCollection<Customer> _customers;
 
-        public MainWindow()
+        public MainWindow(CustomerRepository customerRepository)
         {
-            _customerRepository = new CustomerRepository();
+            _customerRepository = customerRepository;
             InitializeComponent();
         }
 
@@ -33,13 +34,12 @@ namespace MiniHotelManagement
             try
             {
                 Customer customer1 = new Customer
-                {
-                    CustomerID = _customers.Any() ? _customers.Max(c => c.CustomerID) + 1 : 1,
+                {                
                     CustomerFullName = txtFullName.Text,
                     Telephone = txtPhone.Text,
                     EmailAddress = txtEmail.Text,
-                    CustomerBirthday = txtDob.Text,
-                    CustomerStatus = 0,
+                    CustomerBirthday = DateOnly.Parse(txtDob.Text),
+                    CustomerStatus = 1,
                     Password = txtPassword.Text
                 };
                 _customerRepository.AddCustomer(customer1);
@@ -58,14 +58,14 @@ namespace MiniHotelManagement
                 if (txtCustomerID.Text.Length > 0)
                 {
                     int id = int.Parse(txtCustomerID.Text);
-                    Customer customer = _customers.FirstOrDefault(c => c.CustomerID == id);
+                    Customer customer = _customerRepository.GetCustomerById(id);
                     if (customer != null)
                     {
                         customer.CustomerFullName = txtFullName.Text;
                         customer.Telephone = txtPhone.Text;
                         customer.EmailAddress = txtEmail.Text;
-                        customer.CustomerBirthday = txtDob.Text;
-                        customer.CustomerStatus = 0;
+                        customer.CustomerBirthday = DateOnly.Parse(txtDob.Text);
+                        customer.CustomerStatus = 1;
                         customer.Password = txtPassword.Text;
                         _customerRepository.UpdateCustomer(customer);
                         dgData.Items.Refresh();
@@ -85,7 +85,7 @@ namespace MiniHotelManagement
                 if (txtCustomerID.Text.Length > 0)
                 {
                     int id = int.Parse(txtCustomerID.Text);
-                    Customer customer = _customers.FirstOrDefault(c => c.CustomerID == id);
+                    Customer customer = _customers.FirstOrDefault(c => c.CustomerId == id);
                     if (customer != null)
                     {
                         _customers.Remove(customer);
@@ -108,11 +108,11 @@ namespace MiniHotelManagement
         {
             if (dgData.SelectedItem is Customer customer)
             {
-                txtCustomerID.Text = customer.CustomerID.ToString();
+                txtCustomerID.Text = customer.CustomerId.ToString();
                 txtFullName.Text = customer.CustomerFullName;
                 txtPhone.Text = customer.Telephone;
                 txtEmail.Text = customer.EmailAddress;
-                txtDob.Text = customer.CustomerBirthday;
+                txtDob.Text = customer.CustomerBirthday.ToString();
                 txtPassword.Text = customer.Password;
             }
         }
@@ -120,7 +120,14 @@ namespace MiniHotelManagement
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            RoomManagerWindow roomManager = new RoomManagerWindow();
+            RoomManagerWindow roomManager = (App.Current as App)?.GetRoomInfoWindow();
+            roomManager.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            ReportWindow roomManager = (App.Current as App)?.GetReportWindow();
             roomManager.Show();
         }
     }

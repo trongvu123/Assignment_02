@@ -1,4 +1,4 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,5 @@
-﻿using DataModels1;
+﻿using HotelManagement;
+using HotelManagement.Models;
 using RepositoryPattern1;
 using System;
 using System.Collections.Generic;
@@ -25,10 +26,10 @@ namespace MiniHotelManagement
     {
         private readonly CustomerRepository _customerRepository;
         private ObservableCollection<Customer> _customers;
-        public UserProfile()
+        public UserProfile(CustomerRepository customerRepository)
         {
             InitializeComponent();
-            _customerRepository = new CustomerRepository();
+            _customerRepository = customerRepository;
             _customers = new ObservableCollection<Customer>();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -39,11 +40,11 @@ namespace MiniHotelManagement
         {
             if (CurrentUser.LoggedInUser != null)
             {
-                txtCustomerID.Text = CurrentUser.LoggedInUser.CustomerID.ToString();
+                txtCustomerID.Text = CurrentUser.LoggedInUser.CustomerId.ToString();
                 txtFullName.Text = CurrentUser.LoggedInUser.CustomerFullName;
                 txtPhone.Text = CurrentUser.LoggedInUser.Telephone;
                 txtEmail.Text = CurrentUser.LoggedInUser.EmailAddress;
-                txtDob.Text = CurrentUser.LoggedInUser.CustomerBirthday;
+                txtDob.Text = CurrentUser.LoggedInUser.CustomerBirthday.ToString();
                 txtPassword.Text = CurrentUser.LoggedInUser.Password;
             }
         }
@@ -55,17 +56,17 @@ namespace MiniHotelManagement
                 if (txtCustomerID.Text.Length > 0)
                 {
                     int id = int.Parse(txtCustomerID.Text);
-                    var customer = _customerRepository.GetAllCustomers().FirstOrDefault(c => c.CustomerID == id);
+                    var customer = _customerRepository.GetAllCustomers().FirstOrDefault(c => c.CustomerId == id);
                     if (customer != null)
                     {
                         customer.CustomerFullName = txtFullName.Text;
                         customer.Telephone = txtPhone.Text;
                         customer.EmailAddress = txtEmail.Text;
-                        customer.CustomerBirthday = txtDob.Text;
-                        customer.CustomerStatus = 0;
+                        customer.CustomerBirthday = DateOnly.Parse(txtDob.Text);
+                        customer.CustomerStatus = 1;
                         customer.Password = txtPassword.Text;
                         _customerRepository.UpdateCustomer(customer);
-
+                        
                     }
                 }
             }
@@ -77,6 +78,13 @@ namespace MiniHotelManagement
             {
                 MessageBox.Show("Update success!");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            UserBookingWindow roomManager = (App.Current as App)?.GetUserBookingWindow();
+            roomManager.Show();
         }
     }
 }

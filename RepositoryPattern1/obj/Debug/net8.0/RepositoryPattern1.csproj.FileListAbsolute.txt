@@ -13,3 +13,5 @@ D:\dotnet2\RepositoryPattern1\obj\Debug\net8.0\RepositoryPattern1.dll
 D:\dotnet2\RepositoryPattern1\obj\Debug\net8.0\refint\RepositoryPattern1.dll
 D:\dotnet2\RepositoryPattern1\obj\Debug\net8.0\RepositoryPattern1.pdb
 D:\dotnet2\RepositoryPattern1\obj\Debug\net8.0\ref\RepositoryPattern1.dll
+D:\dotnet2\RepositoryPattern1\bin\Debug\net8.0\RepositoryPattern1.runtimeconfig.json
+D:\dotnet2\RepositoryPattern1\obj\Debug\net8.0\RepositoryPattern1.genruntimeconfig.cache

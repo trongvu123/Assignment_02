@@ -1,4 +1,4 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,54 +10,51 @@ namespace RepositoryPattern1
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private static  ObservableCollection<Customer> Customers = new ObservableCollection<Customer>
-        {
-              new Customer { CustomerID = 1, CustomerFullName = "John Doe", Telephone = "123456789", EmailAddress = "john@example.com", CustomerBirthday = "12/05/2001", CustomerStatus = 1, Password = "password123" },
-              new Customer { CustomerID = 2, CustomerFullName = "Jane Smith", Telephone = "987654321", EmailAddress = "jane@example.com", CustomerBirthday = "12/05/2005", CustomerStatus = 1, Password = "qwerty456" },
-              new Customer { CustomerID = 2, CustomerFullName = "Jane Smith2", Telephone = "987654321", EmailAddress = "admin@FUMiniHotelSystem.com", CustomerBirthday = "12/05/2005", CustomerStatus = 1, Password = "@@abc123@@" }
+        private readonly FuminiHotelManagementContext _context;
 
-        };
+        public CustomerRepository(FuminiHotelManagementContext context)
+        {
+            _context = context;
+        }
+
         public void AddCustomer(Customer customer)
         {
-            Customers.Add(customer);
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
         }
 
         public void DeleteCustomer(int customerId)
         {
-            var customer = Customers.FirstOrDefault(c=>c.CustomerID == customerId);
-            Customers.Remove(customer);
+            var customer = _context.Customers.FirstOrDefault(c=>c.CustomerId == customerId);
+            _context.Customers.Remove(customer);
+            _context.SaveChanges();
         }
 
         public ObservableCollection<Customer> GetAllCustomers()
         {
-            return Customers;
+            return new ObservableCollection<Customer>(_context.Customers.ToList());
         }
 
         public Customer GetCustomerById(int customerId)
         {
-            var customer = Customers.FirstOrDefault(c => c.CustomerID == customerId);
+            var customer =_context.Customers.FirstOrDefault(c => c.CustomerId == customerId);
             return customer;
         }
 
         public Customer GetCustomerByUsernameAndPassword(string username, string password)
         {
-            return Customers.FirstOrDefault(c => c.EmailAddress == username && c.Password == password);
+            return _context.Customers.FirstOrDefault(c => c.EmailAddress == username && c.Password == password);
         }
 
         public void UpdateCustomer(Customer customer)
         {
-            var existingCustomer = GetCustomerById(customer.CustomerID);
-            if (existingCustomer != null)
-            {
-                existingCustomer.CustomerID = customer.CustomerID;
-                existingCustomer.CustomerFullName = customer.CustomerFullName;
-                existingCustomer.Telephone = customer.Telephone;
-                existingCustomer.EmailAddress = customer.EmailAddress;
-                existingCustomer.CustomerBirthday = customer.CustomerBirthday;
-                existingCustomer.CustomerStatus = customer.CustomerStatus;
-                existingCustomer.CustomerStatus = 0;
-                existingCustomer.Password = customer.Password;
-            }
+            _context.Customers.Update(customer);
+            _context.SaveChanges();
+        }
+
+        ObservableCollection<BookingReservation> ICustomerRepository.GetAllCustomers()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using RepositoryPattern1;
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace MiniHotelManagement
         private readonly RoomTypeRepository _roomTypeRepository;
         private ObservableCollection<RoomInformation> _rooms;
         private ObservableCollection<RoomType> _roomTypes;
-        public RoomManagerWindow()
+        public RoomManagerWindow(RoomTypeRepository roomTypeRepository, RoomRepository roomRepository)
         {
-            _roomRepository = new RoomRepository();
-            _roomTypeRepository = new RoomTypeRepository();
+            _roomRepository = roomRepository;
+            _roomTypeRepository = roomTypeRepository;
             InitializeComponent();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -47,18 +47,18 @@ namespace MiniHotelManagement
             _roomTypes = new ObservableCollection<RoomType>(_roomTypeRepository.GetRoomTypes());
             cboCategory.ItemsSource = _roomTypes;
             cboCategory.DisplayMemberPath = "RoomTypeName";
-            cboCategory.SelectedValuePath = "RoomTypeID";
+            cboCategory.SelectedValuePath = "RoomTypeId";
         }
         private void dgData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (dgData.SelectedItem is RoomInformation room)
             {
-                txtRoomID.Text = room.RoomID.ToString();
+                txtRoomID.Text = room.RoomId.ToString();
                 txtRoomNumber.Text = room.RoomNumber;
-                txtRoomDescription.Text = room.RoomDescription;
+                txtRoomDescription.Text = room.RoomDetailDescription;
                 txtRoomCapacity.Text = room.RoomMaxCapacity.ToString();
-                txtRoomPrice.Text = room.RoomPricePerDate.ToString();
-                cboCategory.SelectedValue = room.RoomTypeID;
+                txtRoomPrice.Text = room.RoomPricePerDay.ToString();
+                cboCategory.SelectedValue = room.RoomTypeId;
             }
         }
 
@@ -67,16 +67,16 @@ namespace MiniHotelManagement
             try
             {
                 var room = _roomRepository.GetAllRooms();
-                var roomLast = room.LastOrDefault();
+             
                 RoomInformation newRoom = new RoomInformation
                 {
-                    RoomID = roomLast.RoomID + 1,
+                 
                     RoomNumber = txtRoomNumber.Text,
-                    RoomDescription = txtRoomDescription.Text,
+                    RoomDetailDescription = txtRoomDescription.Text,
                     RoomMaxCapacity = int.Parse(txtRoomCapacity.Text),
-                    RoomPricePerDate = decimal.Parse(txtRoomPrice.Text),
+                    RoomPricePerDay = decimal.Parse(txtRoomPrice.Text),
                     RoomStatus = 1,
-                    RoomTypeID = (int)cboCategory.SelectedValue
+                    RoomTypeId = (int)cboCategory.SelectedValue
                 };
                 _roomRepository.AddRoom(newRoom);
                 loadDataRoom();
@@ -95,10 +95,11 @@ namespace MiniHotelManagement
                 {
                     RoomInformation roomToUpdate = _roomRepository.GetRoomById(roomId);
                     roomToUpdate.RoomNumber = txtRoomNumber.Text;
-                    roomToUpdate.RoomDescription = txtRoomDescription.Text;
+                    roomToUpdate.RoomDetailDescription = txtRoomDescription.Text;
                     roomToUpdate.RoomMaxCapacity = int.Parse(txtRoomCapacity.Text);
-                    roomToUpdate.RoomPricePerDate = decimal.Parse(txtRoomPrice.Text);
-                    roomToUpdate.RoomTypeID = (int)cboCategory.SelectedValue;
+                    roomToUpdate.RoomPricePerDay = decimal.Parse(txtRoomPrice.Text);
+                    roomToUpdate.RoomStatus = 1;    
+                    roomToUpdate.RoomTypeId = (int)cboCategory.SelectedValue;
                     _roomRepository.UpdateRoom(roomToUpdate);
                     loadDataRoom();
                 }
@@ -128,6 +129,13 @@ namespace MiniHotelManagement
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBookingReservation_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            BookingReservationWindow roomManager = (App.Current as App)?.GetBookingReservationWindow();
+            roomManager.Show();
         }
     }
 }

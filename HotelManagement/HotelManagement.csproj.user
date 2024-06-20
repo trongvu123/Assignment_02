@@ -7,13 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="BookingReservationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserBookingWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BookingReservationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login_Window.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ReportWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="RoomManagerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserBookingWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserProfile.xaml">

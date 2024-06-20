@@ -58,7 +58,7 @@
 
         <DataGrid x:Name="dgData" Margin="4" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4" AutoGenerateColumns="False" SelectionChanged="dgData_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding CustomerID}" />
+                <DataGridTextColumn Header="ID" Binding="{Binding CustomerId}" />
                 <DataGridTextColumn Header="Name" Binding="{Binding CustomerFullName}" />
                 <DataGridTextColumn Header="Phone" Binding="{Binding Telephone}" />
                 <DataGridTextColumn Header="Email" Binding="{Binding EmailAddress}" />
@@ -74,5 +74,6 @@
             <Button x:Name="btnClose" Content="Close" Margin="5" Width="121" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
         </StackPanel>
         <Button Grid.Column="3" Content="Room" HorizontalAlignment="Left" Height="20" Margin="126,0,0,0" Grid.Row="8" VerticalAlignment="Center" Width="63" Click="Button_Click"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="13,0,0,0" Grid.Row="8" VerticalAlignment="Center" Height="20" Width="75" Click="Button_Click_1"/>
     </Grid>
 </Window>

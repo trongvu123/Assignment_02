@@ -1,4 +1,4 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,15 +10,16 @@ namespace RepositoryPattern1
 {
     public class RoomTypeRepository : IRoomType
     {
-        private static ObservableCollection<RoomType> _rooms = new ObservableCollection<RoomType>
+        private readonly FuminiHotelManagementContext _context;
+
+        public RoomTypeRepository(FuminiHotelManagementContext context)
         {
-            new RoomType { RoomTypeID = 1, RoomTypeName = "Standard", TypeDescription = "Standard room", TypeNote = "Basic amenities" },
-               new RoomType { RoomTypeID = 2, RoomTypeName = "Deluxe", TypeDescription = "Deluxe room", TypeNote = "Enhanced amenities" },
-               new RoomType { RoomTypeID = 3, RoomTypeName = "Suite", TypeDescription = "Suite room", TypeNote = "Luxury amenities" }
-        };
+            _context = context;
+        }
+
         public ObservableCollection<RoomType> GetRoomTypes()
         {
-            return _rooms;
+            return new ObservableCollection<RoomType>(_context.RoomTypes.ToList());
         }
     }
 }

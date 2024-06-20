@@ -1,0 +1,25 @@
+﻿<Window x:Class="HotelManagement.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagement"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="30,42,0,0" TextWrapping="Wrap" Text="Report content: " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,21,0,0" TextWrapping="Wrap" Text="Report content: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtContent" HorizontalAlignment="Left" Margin="120,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="648" Height="38" />
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="120,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" Height="21" IsEnabled="False"/>
+        <DataGrid x:Name="DgData" Margin="120,85,26,28" SelectionChanged="DgData_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No" Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Report" Width="*" Binding="{Binding Content}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="725,411,0,0" VerticalAlignment="Top" Width="49" Click="btn_click3"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="616,411,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="Update" HorizontalAlignment="Left" Height="20" Margin="667,411,0,0" VerticalAlignment="Top" Width="45" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>

@@ -3,77 +3,24 @@
   "WorkspaceRootPath": "D:\\dotnet2\\HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|d:\\dotnet2\\hotelmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\reportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:reportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\userprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:userprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|d:\\dotnet2\\hotelmanagement\\reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\login_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:login_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\login_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:login_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|D:\\dotnet2\\HotelManagement\\hotelmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{607980F8-55CC-47BA-8070-88286210C695}|HotelManagement.csproj|solutionrelative:hotelmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\iroomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\roomtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A189ACFF-2B43-4C46-AE16-D76DA9DA1E1C}|..\\RepositoryPattern1\\RepositoryPattern1.csproj|d:\\dotnet2\\repositorypattern1\\repositorypattern1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF6DEB3-D95C-46FF-A9D3-F33C82623A69}|..\\DataModels1\\DataModels1.csproj|d:\\dotnet2\\datamodels1\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF6DEB3-D95C-46FF-A9D3-F33C82623A69}|..\\DataModels1\\DataModels1.csproj|d:\\dotnet2\\datamodels1\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF6DEB3-D95C-46FF-A9D3-F33C82623A69}|..\\DataModels1\\DataModels1.csproj|d:\\dotnet2\\datamodels1\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF6DEB3-D95C-46FF-A9D3-F33C82623A69}|..\\DataModels1\\DataModels1.csproj|d:\\dotnet2\\datamodels1\\datamodels1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,257 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-09T05:32:04.463Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAAAHkAAAAYAAAA",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\dotnet2\\HotelManagement\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:45:49.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-08T16:57:29.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login_Window.xaml.cs",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\Login_Window.xaml.cs",
-              "RelativeDocumentMoniker": "Login_Window.xaml.cs",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\Login_Window.xaml.cs",
-              "RelativeToolTip": "Login_Window.xaml.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAawCsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:46:20.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserProfile.xaml.cs",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\UserProfile.xaml.cs",
-              "RelativeDocumentMoniker": "UserProfile.xaml.cs",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\UserProfile.xaml.cs",
-              "RelativeToolTip": "UserProfile.xaml.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwEEAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:51:38.934Z"
+              "WhenOpened": "2024-06-20T14:00:10.745Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\CustomerRepository.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\CustomerRepository.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\CustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:26.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-08T16:45:41.882Z"
+              "WhenOpened": "2024-06-20T13:59:40.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login_Window.xaml",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\Login_Window.xaml",
-              "RelativeDocumentMoniker": "Login_Window.xaml",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\Login_Window.xaml",
-              "RelativeToolTip": "Login_Window.xaml",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\dotnet2\\HotelManagement\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAQwBEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T13:43:16.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportWindow.xaml",
+              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\ReportWindow.xaml",
+              "RelativeDocumentMoniker": "ReportWindow.xaml",
+              "ToolTip": "D:\\dotnet2\\HotelManagement\\ReportWindow.xaml",
+              "RelativeToolTip": "ReportWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-08T16:46:17.568Z"
+              "WhenOpened": "2024-06-20T13:31:27.984Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAABAAAA",
+              "DocumentIndex": 0,
+              "Title": "ReportWindow.xaml.cs",
+              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\ReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ReportWindow.xaml.cs",
+              "ToolTip": "D:\\dotnet2\\HotelManagement\\ReportWindow.xaml.cs*",
+              "RelativeToolTip": "ReportWindow.xaml.cs*",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T05:32:08.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserLogin.cs",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\UserLogin.cs",
-              "RelativeDocumentMoniker": "UserLogin.cs",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\UserLogin.cs",
-              "RelativeToolTip": "UserLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:46:34.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HotelManagement",
-              "DocumentMoniker": "D:\\dotnet2\\HotelManagement\\HotelManagement.csproj",
-              "RelativeDocumentMoniker": "HotelManagement.csproj",
-              "ToolTip": "D:\\dotnet2\\HotelManagement\\HotelManagement.csproj",
-              "RelativeToolTip": "HotelManagement.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-08T16:45:22.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\ICustomerRepository.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\ICustomerRepository.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\ICustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:29.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IRoomRepository.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\IRoomRepository.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\IRoomRepository.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\IRoomRepository.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\IRoomRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:34.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IRoomType.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\IRoomType.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\IRoomType.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\IRoomType.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\IRoomType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:40.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RoomRepository.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\RoomRepository.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\RoomRepository.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\RoomRepository.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\RoomRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:43.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RoomTypeRepository.cs",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\RoomTypeRepository.cs",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\RoomTypeRepository.cs",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\RoomTypeRepository.cs",
-              "RelativeToolTip": "..\\RepositoryPattern1\\RoomTypeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:43:45.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RepositoryPattern1",
-              "DocumentMoniker": "D:\\dotnet2\\RepositoryPattern1\\RepositoryPattern1.csproj",
-              "RelativeDocumentMoniker": "..\\RepositoryPattern1\\RepositoryPattern1.csproj",
-              "ToolTip": "D:\\dotnet2\\RepositoryPattern1\\RepositoryPattern1.csproj",
-              "RelativeToolTip": "..\\RepositoryPattern1\\RepositoryPattern1.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-08T16:43:51.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RoomType.cs",
-              "DocumentMoniker": "D:\\dotnet2\\DataModels1\\RoomType.cs",
-              "RelativeDocumentMoniker": "..\\DataModels1\\RoomType.cs",
-              "ToolTip": "D:\\dotnet2\\DataModels1\\RoomType.cs",
-              "RelativeToolTip": "..\\DataModels1\\RoomType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:41:55.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RoomInformation.cs",
-              "DocumentMoniker": "D:\\dotnet2\\DataModels1\\RoomInformation.cs",
-              "RelativeDocumentMoniker": "..\\DataModels1\\RoomInformation.cs",
-              "ToolTip": "D:\\dotnet2\\DataModels1\\RoomInformation.cs",
-              "RelativeToolTip": "..\\DataModels1\\RoomInformation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:41:52.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\dotnet2\\DataModels1\\Customer.cs",
-              "RelativeDocumentMoniker": "..\\DataModels1\\Customer.cs",
-              "ToolTip": "D:\\dotnet2\\DataModels1\\Customer.cs",
-              "RelativeToolTip": "..\\DataModels1\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:41:46.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DataModels1",
-              "DocumentMoniker": "D:\\dotnet2\\DataModels1\\DataModels1.csproj",
-              "RelativeDocumentMoniker": "..\\DataModels1\\DataModels1.csproj",
-              "ToolTip": "D:\\dotnet2\\DataModels1\\DataModels1.csproj",
-              "RelativeToolTip": "..\\DataModels1\\DataModels1.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-08T16:41:37.259Z"
+              "WhenOpened": "2024-06-20T13:20:17.672Z",
+              "EditorCaption": ""
             }
           ]
         }

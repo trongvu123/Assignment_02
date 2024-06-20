@@ -1,18 +1,20 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using RepositoryPattern1;
 using System.Linq;
 using System.Windows;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 namespace MiniHotelManagement
 {
     public partial class Login_Window : Window
     {
         private readonly CustomerRepository _customerRepository;
-        public Login_Window()
+     
+        public Login_Window(CustomerRepository customerRepository)
         {
 
             InitializeComponent();
-            _customerRepository = new CustomerRepository();
+            _customerRepository = customerRepository;
         }
         public static IConfiguration Configuration { get; private set; }
 
@@ -23,23 +25,24 @@ namespace MiniHotelManagement
 
             if (user != null)
             {
-                if (user.EmailAddress == "admin@FUMiniHotelSystem.com" && user.Password == "@@abc123@@")
-                {
-                    this.Hide();
-                    MainWindow mainWindow = new MainWindow();
-                    mainWindow.Show();
-                }
-                else
-                {
+
                     this.Hide();
                     CurrentUser.LoggedInUser = user;
-                    UserProfile userProfile = new UserProfile();
-                    userProfile.Show();
-                }
+                    UserProfile roomManager = (App.Current as App)?.GetProfileWindow();
+                    roomManager.Show();               
             }
             else
             {
-                MessageBox.Show("User name or password is incorrect.");
+                if (txtUser.Text == "admin@FUMiniHotelSystem.com" && txtPass.Password == "@@abc123@@")
+                {
+                    this.Hide();
+                    MainWindow mainWindow = (App.Current as App)?.GetMainWindow();
+                    mainWindow?.Show();
+                } else
+                {
+
+                   MessageBox.Show("User name or password is incorrect.");
+                }
             }
         }
 

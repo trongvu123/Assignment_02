@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataModels1;
+using HotelManagement.Models;
 namespace RepositoryPattern1
 {
     public interface IRoomRepository

@@ -1,4 +1,4 @@
-﻿using DataModels1;
+﻿using HotelManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,48 +10,39 @@ namespace RepositoryPattern1
 {
     public class RoomRepository : IRoomRepository
     {
-        private static ObservableCollection<RoomInformation> Rooms = new ObservableCollection<RoomInformation>
+        private readonly FuminiHotelManagementContext _context;
+        public RoomRepository(FuminiHotelManagementContext context)
         {
-               new RoomInformation { RoomID = 1, RoomNumber = "101", RoomDescription = "Standard room", RoomMaxCapacity = 2, RoomStatus = 1, RoomPricePerDate = 100, RoomTypeID = 1 },
-               new RoomInformation { RoomID = 2, RoomNumber = "102", RoomDescription = "Deluxe room", RoomMaxCapacity = 4, RoomStatus = 1, RoomPricePerDate = 200, RoomTypeID = 2 },
-               new RoomInformation { RoomID = 3, RoomNumber = "201", RoomDescription = "Suite room", RoomMaxCapacity = 6, RoomStatus = 1, RoomPricePerDate = 300, RoomTypeID = 3 }
-        };
-
+            _context = context;
+        }
         public void AddRoom(RoomInformation room)
         {
-            Rooms.Add(room);
+            _context.RoomInformations.Add(room);
+            _context.SaveChanges();
         }
         public RoomInformation GetRoomById(int roomId)
         {
-            var room = Rooms.FirstOrDefault(r => r.RoomID == roomId);
+            var room = _context.RoomInformations.FirstOrDefault(r => r.RoomId == roomId);
             return room;
         }
         public void DeleteRoom(int roomId)
         {
             var room = GetRoomById(roomId);
-            Rooms.Remove(room);
+            _context.RoomInformations.Remove(room);
+            _context.SaveChanges();
         }
 
         public ObservableCollection<RoomInformation> GetAllRooms()
         {
-            return Rooms;
+            return new ObservableCollection<RoomInformation>(_context.RoomInformations.ToList());
         }
 
      
 
         public void UpdateRoom(RoomInformation room)
         {
-            var roomExist = GetRoomById(room.RoomID);
-            if (roomExist != null)
-            {
-                roomExist.RoomNumber = room.RoomNumber;
-                roomExist.RoomDescription = room.RoomDescription;
-                roomExist.RoomMaxCapacity = room.RoomMaxCapacity;
-                roomExist.RoomStatus = room.RoomStatus;
-                roomExist.RoomPricePerDate = room.RoomPricePerDate;
-                roomExist.RoomTypeID = room.RoomTypeID;
-            }
-
+            _context.RoomInformations.Update(room);
+            _context.SaveChanges();
         }
     }
 }
